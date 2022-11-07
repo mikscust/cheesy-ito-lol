@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "anotefontstyle";
+    src: url(a-note-font-style.ttf);
+}
+
+body {
+    background: #E52079;
+    background: -webkit-linear-gradient(top left, #E52079, #E8AF42);
+    background: -moz-linear-gradient(top left, #E52079, #E8AF42);
+    background: linear-gradient(to bottom right, #E52079, #E8AF42);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.wrapper {
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.cat-gif-photo,
+.paragraph-texts {
+    height: 10rem;
+}
+
+.cat-gif-photo {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 5rem;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+}
+
+.heading-text,
+.paragraph-texts {
+    font-family: "anotefontstyle";
+    color: hsl(0, 0%, 100%);
+    width:15rem;
+    text-align: center;
+}
+
+.heading-text {
+    height:2.5rem;
+    padding: 1rem;
+}
+
+.hand-wave-emoji {
+    animation-name: hand-wave-animation;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;       
+    display: inline-block;
+  }
+  
+  @keyframes hand-wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }
+    100% { transform: rotate( 0.0deg) ; -webkit-transform: rotate( 0.0deg) ; -moz-transform: rotate( 0.0deg) ; -ms-transform: rotate( 0.0deg) ; -o-transform: rotate( 0.0deg) ; }
+  }
+
+.music {
+    width: 10rem;
+}
